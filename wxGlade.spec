@@ -51,7 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/%{name},%{_examplesdir}/%{name}-%{version}}
 
 for dir in "codegen" "edit_sizers" "widgets"; do
-    find "$dir" -name '*.py' -exec rm -rf '{}' ';'
+	find "$dir" -name '*.py' -exec rm -rf '{}' ';'
 done
 
 cp -pr codegen		$RPM_BUILD_ROOT%{_datadir}/%{name}
