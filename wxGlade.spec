@@ -26,7 +26,7 @@ popularnym zbiorem narzêdzi GUI. Pomaga tworzyæ interfejsy u¿ytkownika
 wxWidgets/wxPython/wxPerl. Obecnie mo¿e generowaæ kod Pythona, C++,
 Perla oraz XRC (zasoby XML wxWidgets).
 
-# Home the examples will come back soon
+# Hope the examples will come back soon
 #%package examples
 #Summary:	wxGlade example GUI designs
 #Summary(pl):	Przyk³adowe projekty GUI wxGlade
@@ -43,7 +43,7 @@ Perla oraz XRC (zasoby XML wxWidgets).
 %setup -q
 
 %build
-%{__python} -c 'import compileall; compileall.compile_dir(".")'
+%py_comp .
 
 %install
 rm -rf $RPM_BUILD_ROOT
