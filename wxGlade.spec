@@ -1,12 +1,12 @@
 Summary: 	wxWidgets/wxPython/wxPerl GUI designer
 Summary(pl):	Projektant GUI dla wxWidgets/wxPython/wxPerl
 Name: 		wxGlade
-Version: 	0.3.4
+Version: 	0.3.5
 Release: 	1
 License:	MIT
 Group:		Development/Tools
 Source0: 	http://dl.sourceforge.net/wxglade/%{name}-%{version}.tar.gz
-# Source0-md5:	952bf7f839e78135fe013b4878618e07
+# Source0-md5:	08c47c67af3c31656d04e54782b1e939
 URL:		http://wxglade.sourceforge.net/
 BuildRequires:	python-modules >= 2.2
 Requires:	python-modules >= 2.2
@@ -26,18 +26,17 @@ popularnym zbiorem narzêdzi GUI. Pomaga tworzyæ interfejsy u¿ytkownika
 wxWidgets/wxPython/wxPerl. Obecnie mo¿e generowaæ kod Pythona, C++,
 Perla oraz XRC (zasoby XML wxWidgets).
 
-# Hope the examples will come back soon
-#%package examples
-#Summary:	wxGlade example GUI designs
-#Summary(pl):	Przyk³adowe projekty GUI wxGlade
-#Group:		Development/Tools
-#Requires:	%{name} = %{version}-%{release}
+%package examples
+Summary:	wxGlade example GUI designs
+Summary(pl):	Przyk³adowe projekty GUI wxGlade
+Group:		Development/Tools
+Requires:	%{name} = %{version}-%{release}
 
-#%description examples
-#wxGlade example GUI designs.
+%description examples
+wxGlade example GUI designs.
 
-#%description examples -l pl
-#Przyk³adowe projekty GUI wxGlade.
+%description examples -l pl
+Przyk³adowe projekty GUI wxGlade.
 
 %prep
 %setup -q
@@ -62,7 +61,7 @@ install *.py[co]	$RPM_BUILD_ROOT%{_datadir}/%{name}
 install credits.txt	$RPM_BUILD_ROOT%{_datadir}/%{name}
 install license.txt	$RPM_BUILD_ROOT%{_datadir}/%{name}
 
-#cp -pr examples		$RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -pr examples		$RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 cat > $RPM_BUILD_ROOT%{_bindir}/wxglade <<EOF
 #!/bin/sh
@@ -85,6 +84,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/%{name}/credits.txt
 %{_datadir}/%{name}/license.txt
 
-#%files examples
-#%defattr(644,root,root,755)
-#%{_examplesdir}/%{name}-%{version}
+%files examples
+%defattr(644,root,root,755)
+%{_examplesdir}/%{name}-%{version}
