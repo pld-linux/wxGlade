@@ -1,12 +1,12 @@
 Summary: 	wxWidgets/wxPython/wxPerl GUI designer
 Summary(pl):	Projektant GUI dla wxWidgets/wxPython/wxPerl
 Name: 		wxGlade
-Version: 	0.3.3
+Version: 	0.3.4
 Release: 	1
 License:	MIT
 Group:		Development/Tools
-Source0: 	http://dl.sourceforge.net/wxglade/%{name}-%{version}.tgz
-# Source0-md5:	ac0027c9b50b20f2ad351e40c7229228
+Source0: 	http://dl.sourceforge.net/wxglade/%{name}-%{version}.tar.gz
+# Source0-md5:	952bf7f839e78135fe013b4878618e07
 URL:		http://wxglade.sourceforge.net/
 BuildRequires:	python-modules >= 2.2
 Requires:	python-modules >= 2.2
@@ -44,6 +44,7 @@ Perla oraz XRC (zasoby XML wxWidgets).
 
 %build
 %py_comp .
+%py_ocomp .
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -57,7 +58,7 @@ cp -pr codegen		$RPM_BUILD_ROOT%{_datadir}/%{name}
 cp -pr edit_sizers	$RPM_BUILD_ROOT%{_datadir}/%{name}
 cp -pr icons		$RPM_BUILD_ROOT%{_datadir}/%{name}
 cp -pr widgets		$RPM_BUILD_ROOT%{_datadir}/%{name}
-install *.pyc		$RPM_BUILD_ROOT%{_datadir}/%{name}
+install *.py[co]	$RPM_BUILD_ROOT%{_datadir}/%{name}
 install credits.txt	$RPM_BUILD_ROOT%{_datadir}/%{name}
 install license.txt	$RPM_BUILD_ROOT%{_datadir}/%{name}
 
@@ -80,7 +81,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/%{name}/edit_sizers
 %{_datadir}/%{name}/icons
 %{_datadir}/%{name}/widgets
-%{_datadir}/%{name}/*.pyc
+%{_datadir}/%{name}/*.py[co]
 %{_datadir}/%{name}/credits.txt
 %{_datadir}/%{name}/license.txt
 
