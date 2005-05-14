@@ -1,4 +1,4 @@
-%define		snap	20050425
+%define		snap	20050514
 Summary: 	wxWidgets/wxPython/wxPerl GUI designer
 Summary(pl):	Projektant GUI dla wxWidgets/wxPython/wxPerl
 Name: 		wxGlade
@@ -7,7 +7,7 @@ Release: 	0.%{snap}.1
 License:	MIT
 Group:		Development/Tools
 Source0: 	%{name}-%{version}-%{snap}.tar.gz
-# Source0-md5:	ac17c484df92d1aabfa1eceef0d1aebc
+# Source0-md5:	d30b23c546abad9e62640331076145e5
 URL:		http://wxglade.sourceforge.net/
 BuildRequires:	python-modules >= 2.2
 Requires:	python-modules >= 2.2
