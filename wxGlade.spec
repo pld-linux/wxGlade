@@ -11,6 +11,7 @@ URL:		http://wxglade.sourceforge.net/
 BuildRequires:	python-modules >= 2.2
 Requires:	python-modules >= 2.2
 Requires: 	python-wxPython >= 2.4.2.4
+Obsoletes:	wxGlade-examples
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
