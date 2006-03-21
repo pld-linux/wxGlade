@@ -1,16 +1,16 @@
 Summary: 	wxWidgets/wxPython/wxPerl GUI designer
 Summary(pl):	Projektant GUI dla wxWidgets/wxPython/wxPerl
 Name: 		wxGlade
-Version: 	0.4
+Version: 	0.4.1
 Release: 	1
 License:	MIT
 Group:		Development/Tools
-Source0:	http://dl.sourceforge.net/wxglade/wxglade-%{version}.tar.gz
-# Source0-md5:	424f408bd641795f866dcd01740885f2
+Source0:	http://dl.sourceforge.net/wxglade/%{name}-%{version}.tar.gz
+# Source0-md5:	c5d06a450c80743f0adc9136ef91490a
 URL:		http://wxglade.sourceforge.net/
 BuildRequires:	python-modules >= 2.2
 Requires:	python-modules >= 2.2
-Requires: 	python-wxPython >= 2.4.2.4
+Requires: 	python-wxPython >= 2.6
 Obsoletes:	wxGlade-examples
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
