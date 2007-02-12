@@ -1,5 +1,5 @@
 Summary: 	wxWidgets/wxPython/wxPerl GUI designer
-Summary(pl.UTF-8):   Projektant GUI dla wxWidgets/wxPython/wxPerl
+Summary(pl.UTF-8):	Projektant GUI dla wxWidgets/wxPython/wxPerl
 Name: 		wxGlade
 Version: 	0.4.1
 Release: 	1
