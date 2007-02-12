@@ -1,5 +1,5 @@
 Summary: 	wxWidgets/wxPython/wxPerl GUI designer
-Summary(pl):	Projektant GUI dla wxWidgets/wxPython/wxPerl
+Summary(pl.UTF-8):   Projektant GUI dla wxWidgets/wxPython/wxPerl
 Name: 		wxGlade
 Version: 	0.4.1
 Release: 	1
@@ -21,10 +21,10 @@ toolkit wxPython, that helps you create wxWidgets/wxPython/wxPerl user
 interfaces. At the moment it can generate Python, C++, Perl and XRC
 (wxWidgets' XML resources) code.
 
-%description -l pl
+%description -l pl.UTF-8
 wxGlade jest projektantem GUI napisanym w Pythonie i wxPythonie,
-popularnym zbiorem narzêdzi GUI. Pomaga tworzyæ interfejsy u¿ytkownika
-wxWidgets/wxPython/wxPerl. Obecnie mo¿e generowaæ kod Pythona, C++,
+popularnym zbiorem narzÄ™dzi GUI. Pomaga tworzyÄ‡ interfejsy uÅ¼ytkownika
+wxWidgets/wxPython/wxPerl. Obecnie moÅ¼e generowaÄ‡ kod Pythona, C++,
 Perla oraz XRC (zasoby XML wxWidgets).
 
 %prep
