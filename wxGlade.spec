@@ -2,7 +2,7 @@ Summary: 	wxWidgets/wxPython/wxPerl GUI designer
 Summary(pl.UTF-8):	Projektant GUI dla wxWidgets/wxPython/wxPerl
 Name: 		wxGlade
 Version: 	0.6.1
-Release: 	1
+Release: 	2
 License:	MIT
 Group:		Development/Tools
 Source0:	http://dl.sourceforge.net/wxglade/%{name}-%{version}.tar.gz
@@ -45,6 +45,7 @@ done
 cp -pr codegen		$RPM_BUILD_ROOT%{_datadir}/%{name}
 cp -pr edit_sizers	$RPM_BUILD_ROOT%{_datadir}/%{name}
 cp -pr icons		$RPM_BUILD_ROOT%{_datadir}/%{name}
+cp -pr templates	$RPM_BUILD_ROOT%{_datadir}/%{name}
 cp -pr widgets		$RPM_BUILD_ROOT%{_datadir}/%{name}
 install *.py[co]	$RPM_BUILD_ROOT%{_datadir}/%{name}
 install credits.txt	$RPM_BUILD_ROOT%{_datadir}/%{name}
@@ -66,6 +67,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/%{name}/codegen
 %{_datadir}/%{name}/edit_sizers
 %{_datadir}/%{name}/icons
+%{_datadir}/%{name}/templates
 %{_datadir}/%{name}/widgets
 %{_datadir}/%{name}/*.py[co]
 %{_datadir}/%{name}/credits.txt
